@@ -9,6 +9,7 @@ import { InfoComponent } from './pages/info/info.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from 'lib/angular-material.module';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AngularMaterialModule } from 'lib/angular-material.module';
     ProjectsComponent,
     InfoComponent,
     SkillsComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

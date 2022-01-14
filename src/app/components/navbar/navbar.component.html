@@ -2,10 +2,11 @@
   <button mat-icon-button class="menu-button" [matMenuTriggerFor]="menu">
     <mat-icon>menu</mat-icon>
   </button>
-  <span>Portfolio</span>
+  <span routerLink="/">Portfolio</span>
   <span class="spacer"></span>
-  <a link href="#">Home</a>
-  <a link href="#">Projects</a>
+  <a routerLink="/">Home</a>
+  <a routerLink="projects">Projects</a>
+  <a routerLink="info">Info</a>
   <button mat-icon-button class="share-button">
     <mat-icon>share</mat-icon>
   </button>
@@ -13,6 +14,7 @@
 </mat-toolbar>
 
 <mat-menu #menu="matMenu" class="mobile-nav-menu">
-  <a mat-menu-button class="mobile-nav">Home</a>
-  <a mat-menu-button class="mobile-nav">Projects</a>
+  <a mat-menu-button class="mobile-nav" routerLink="/">Home</a>
+  <a mat-menu-button class="mobile-nav" routerLink="projects">Projects</a>
+  <a mat-menu-button class="mobile-nav" routerLink="info">Info</a>
 </mat-menu>
