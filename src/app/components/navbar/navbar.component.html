@@ -1,1 +1,22 @@
-<p>navbar works!</p>
+<mat-toolbar>
+  <button mat-icon-button class="menu-button" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span routerLink="/">Portfolio</span>
+  <span class="spacer"></span>
+  <div class="nav-group">
+    <a routerLink="/">Home</a>
+    <a routerLink="projects">Projects</a>
+    <a routerLink="info">Info</a>
+  </div>
+  <button mat-icon-button class="share-button">
+    <mat-icon>share</mat-icon>
+  </button>
+  <mat-slide-toggle></mat-slide-toggle>
+</mat-toolbar>
+
+<mat-menu #menu="matMenu">
+  <a mat-menu-button class="mobile-nav" routerLink="/">Home</a>
+  <a mat-menu-button class="mobile-nav" routerLink="projects">Projects</a>
+  <a mat-menu-button class="mobile-nav" routerLink="info">Info</a>
+</mat-menu>
