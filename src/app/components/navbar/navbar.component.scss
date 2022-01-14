@@ -8,3 +8,15 @@ a {
   display: flex;
   flex-flow: column;
 }
+.menu-button {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .nav-group {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
