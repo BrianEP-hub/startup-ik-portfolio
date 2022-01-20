@@ -28,11 +28,25 @@ $portfolio-theme: mat.define-light-theme(
     ),
   )
 );
+$portfolio-theme-dark: mat.define-dark-theme(
+  (
+    color: (
+      primary: $portfolio-primary,
+      accent: $portfolio-accent,
+      warn: $portfolio-warn,
+    ),
+  )
+);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($portfolio-theme);
+.theme-light {
+  @include mat.all-component-themes($portfolio-theme);
+}
+.theme-dark {
+  @include mat.all-component-themes($portfolio-theme-dark);
+}
 
 /* You can add global styles to this file, and also import other style files */
 
