@@ -2,5 +2,18 @@
   <mat-card-header>
     <mat-card-title> Projects </mat-card-title>
   </mat-card-header>
-  <mat-card-content> projects go here </mat-card-content>
+  <mat-card-content class="projects">
+    <ng-container *ngFor="let proj of projects">
+      <mat-card class="project-card">
+        <mat-card-header>
+          <mat-card-title>{{ proj.name }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ proj.description }}</p>
+          Link to site: <a href="{{ proj.link }}">click me</a> Link to Repo:
+          Link to repo: <a href="{{ proj.repo }}">no Click me!</a>
+        </mat-card-content>
+      </mat-card>
+    </ng-container>
+  </mat-card-content>
 </mat-card>

@@ -1,0 +1,21 @@
+.cols {
+  display: flex;
+  .left-col,
+  .right-col {
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    margin: 5px;
+  }
+}
+.skills-container {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 500;
+}
+.short-info {
+  p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
