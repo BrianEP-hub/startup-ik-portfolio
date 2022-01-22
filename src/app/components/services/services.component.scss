@@ -1,0 +1,20 @@
+.services {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  .servicesBx {
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 5px;
+    text-align: center;
+    mat-icon {
+      max-width: 80px;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: 600;
+    }
+  }
+}

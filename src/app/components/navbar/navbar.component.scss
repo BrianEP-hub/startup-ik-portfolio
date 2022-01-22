@@ -11,7 +11,9 @@ a {
 .menu-button {
   display: none;
 }
-
+mat-slide-toggle {
+  display: none;
+}
 @media screen and (max-width: 1250px) {
   .nav-group {
     display: none;
