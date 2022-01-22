@@ -1,0 +1,9 @@
+<div class="services">
+  <ng-container *ngFor="let serv of service">
+    <div class="servicesBx">
+      <mat-icon>{{ serv.icon }}</mat-icon>
+      <h3>{{ serv.service }}</h3>
+      <p>{{ serv.description }}</p>
+    </div>
+  </ng-container>
+</div>

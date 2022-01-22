@@ -16,14 +16,29 @@ const PROJECTS_DATA: Projects[] = [
   {
     name: 'Crypto app',
     link: 'https://brianep-hub-crypto-tracker.netlify.app/',
-    description: 'Self made crypto tracker',
+    description:
+      'Self made crypto tracker built with reactjs, axios, antd and reduxjs toolkit',
     repo: 'https://github.com/BrianEP-hub/cryptoapp',
   },
   {
     name: 'Weather API',
     link: '',
-    description: 'Web scraper API for weather news',
+    description:
+      'Web scraper API for weather news buildt with axios, cheerio, express and nodemon',
     repo: 'https://github.com/BrianEP-hub/github-weather',
+  },
+  {
+    name: 'Games dashboard',
+    link: 'https://brianep-hub-angular-dashboard.netlify.app/',
+    description: 'Games display built with Angular 12.2.7 and angular material',
+    repo: 'https://github.com/BrianEP-hub/angular-dashboard-app',
+  },
+  {
+    name: 'SpaceX microsite',
+    link: 'https://brianb.no/space/index.html',
+    description:
+      'First semester Exam project, SpaceX microsite with launch details and countdowntimer for next launch of spaceshuttle',
+    repo: 'https://github.com/BrianEP-hub/Project-Exam',
   },
 ];
 

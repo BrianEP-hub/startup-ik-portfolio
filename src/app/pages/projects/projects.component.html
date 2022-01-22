@@ -9,9 +9,13 @@
           <mat-card-title>{{ proj.name }}</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-          <p>{{ proj.description }}</p>
-          Link to site: <a href="{{ proj.link }}">click me</a> Link to Repo:
-          Link to repo: <a href="{{ proj.repo }}">no Click me!</a>
+          <div class="project-description">
+            <p>{{ proj.description }}</p>
+          </div>
+          <div class="project-links">
+            <p>Link to site: <a href="{{ proj.link }}">click me</a></p>
+            <p>Link to repo: <a href="{{ proj.repo }}">no Click me!</a></p>
+          </div>
         </mat-card-content>
       </mat-card>
     </ng-container>

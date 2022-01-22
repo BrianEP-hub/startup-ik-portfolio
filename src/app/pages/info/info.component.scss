@@ -1,5 +1,6 @@
 .cols {
   display: flex;
+  flex-flow: row;
   .left-col,
   .right-col {
     display: flex;
@@ -17,5 +18,18 @@
   p {
     font-size: 16px;
     font-weight: 500;
+  }
+}
+@media (max-width: 768px) {
+  .cols {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    .left-col,
+    .right-col {
+      width: 100%;
+      margin: 10px;
+      padding: 5px;
+    }
   }
 }
